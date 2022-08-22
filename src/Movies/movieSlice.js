@@ -43,7 +43,7 @@ export const fetchMovies = createAsyncThunk('/Movies/fetchMovies',async ()=>{
         },
         reducers:{
             addMovie : (state,action)=>{
-                console.log('action is triggered',action)
+                console.log('action is triggered on add Movie',action)
                 state.value.moviesData = action.payload
             },
             deleteMovie:(state,action)=>{
